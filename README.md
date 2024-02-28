@@ -8,6 +8,7 @@
     <script src="script.js" defer></script>
     <title>My Personal Website</title>
 </head>
+
 <body>
     <header>
         <h1>Welcome to My Website</h1>
