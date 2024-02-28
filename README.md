@@ -23,6 +23,21 @@
     <section class="content">
         <h2>Home</h2>
         <p>Right now i'm </p>
+<!-- blurbss about myself -->
+        <div class="blurbs">
+            <div class="blurb">
+                <h3>Hobbies</h3>
+                <p>Passionate about weightlifting and staying active.</p>
+            </div>
+
+            <div class="blurb">
+                <h3>Goals</h3>
+                <p>Striving to achieve personal and fitness goals.</p>
+            </div>
+
+            <div class="blurb">
+                <h3>Interests</h3>
+                <p>Interested in technology, coding, and personal development.</p>
     </section>
 
     <footer>
