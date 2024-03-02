@@ -1,157 +1,159 @@
-<<<<<<< Updated upstream
-/* Reset some default styles and set a base font */
-body {
-    font-family: 'Roboto', Arial, sans-serif;
+@import url('https://fonts.google.com/specimen/Kode+Mono');
+
+* {
+    /*font-family: 'Roboto', Arial, sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f5f5f5; /* Set a light background color */
-    color: #333; /* Set the default text color */
+}
+
+body {
+    background: #a18e86;
+    color: #ededed;
 }
 
 /* Header styles */
-header {
-    background: linear-gradient(135deg, #ff8a00, #e52e71); /* Gradient background */
-    color: #fff; /* Text color */
-    padding: 20px; /* Padding for header */
-    text-align: center; /* Center-align text in the header */
-}
-
-/* Header h1 styles */
-header h1 {
-    margin: 0; /* Remove margin for h1 in the header */
-    font-size: 2em; /* Larger font size */
-}
-
-/* Navigation styles */
-nav ul {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-    margin-top: 15px; /* Add top margin to the navigation */
-}
-
-/* Navigation list item styles */
-nav ul li {
-    display: inline; /* Display list items horizontally */
-    margin: 0 15px; /* Add margin to the list items */
-}
-
-/* Navigation link styles */
-nav a {
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Set the default link color */
-    font-weight: bold; /* Set a bold font weight */
-    font-size: 1.2em; /* Larger font size */
-    transition: color 0.3s ease-in-out; /* Add a smooth color transition */
-}
-
-/* Navigation link hover styles */
-nav a:hover {
-    color: #3498db; /* Change link color on hover */
-}
-
-/* Section styles */
-section {
-    background-color: #fff; /* Set a white background color for sections */
-    padding: 40px; /* Add padding to sections */
-    margin: 20px 0; /* Add top and bottom margin to sections */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-}
-
-/* Card styles */
-.card {
-    background-color: #3498db; /* Set a bold color for cards */
-    color: #fff; /* Text color for cards */
-    padding: 20px; /* Add padding to cards */
-    border-radius: 8px; /* Add border radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-    margin-bottom: 20px; /* Add bottom margin to cards */
-}
-
-/* Footer styles */
-footer {
-    background: linear-gradient(135deg, #ff8a00, #e52e71); /* Gradient background for footer */
-    color: #fff; /* Text color in the footer */
-    text-align: center; /* Center-align text in the footer */
-    padding: 20px; /* Add padding to the footer */
-}
-
-/* Responsive styles for screens smaller than 768px */
-@media screen and (max-width: 768px) {
-    header {
-        padding: 15px; /* Adjust padding for smaller screens */
-    }
-
-    nav ul {
-        text-align: center; /* Center-align navigation items */
-        margin-top: 10px; /* Adjust top margin for smaller screens */
-    }
-
-    nav ul li {
-        display: block; /* Display list items as blocks for smaller screens */
-        margin: 10px 0; /* Adjust margin for smaller screens */
-    }
-}
-
-
-
-=======
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.content {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
+.header {
     position: fixed;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%; /* Padding for header */
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100%
+}
+
+.logo {
+    font-size: 25px;
+    color: #f0e2c0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #f0e2c0; /* change */
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+    .navbar a.active {
+    color: #dec2cb;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+    .home-content {
+        max-width: 600px;
+    }
+    .home-content h1 {
+        font-size: 56px;
+        font-weight: 600;
+    }
+    .home-content h3 {
+
+        color: #4b3832;
+
+    }
+    .home-content p {
+        font-size: 16px;
+         margin-bottom: 20px
+    }
+    .home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #e4f3f0; /* Set your desired text color */
+    font-weight: bold; /* Adjust font weight as needed */
+    border: 2px solid #854442; /* Set your desired border color */
+    overflow: hidden;
+    transition: color 0.3s ease-in-out; /* Smooth transition for text color change */
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #854442; /* Set your desired background color */
+    z-index: -1;
+    transition: width 0.5s, background 0.3s; /* Smooth transitions for width and background color */
+}
+
+.btn-box a:hover {
+    color: #dec2cb; /* Text color change on hover */
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+    background: #2f0000;
+}
+
+.socials {
+    position: absolute;
+    bottom: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.socials a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #4b3832;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #4b3832;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.socials a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #dec2cb;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+.socials a:hover::before {
     width: 100%;
 }
 
-/* Responsive Navigation */
-@media screen and (max-width: 600px) {
-    nav ul {
-        text-align: center;
-        margin-top: 10px;
-    }
 
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-}
 
->>>>>>> Stashed changes
+
+
+
+

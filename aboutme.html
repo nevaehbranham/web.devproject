@@ -4,38 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
+    <! -- importing fonts (woah) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
     <title>Aboutme</title>
 </head>
 <body>
-    <section id="about">
-        <div class="main-content">
-            <h2>About Me</h2>
-                <h3>Introduction</h3>
-          <div class="introduction">
 
-                <p>I am a first-year sophmore studying Information Technology at KSU.</p>
-            </div>
+    <header class="header">
+        <a href="#" class="logo">Nevaeh.</a>
 
-            <div class="hobbies">
-                <h3>Hobbies</h3>
-                <ul>
-                    <li>Reading</li>
-                    <li>Language Learning</li>
-                    <li>Traveling</li>
-                    <li>Weight-lifting</li>
-                </ul>
-            </div>
-
-            <div class="family">
-                <h3>Family</h3>
-                <p>My dog, Karmen!</p>
-                <img src="data:image/jpeg;base64,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" alt="Mackie">
-                <p> He's a border collie mix I got when I was in elementary school.</p>
-            </div>
-
+        <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="aboutme.html" class="active" > About</a>
+                <a href="contactme.html">Contact</a>
+        </nav>
+    </header>
+    <section class="Facts">
+        <div class="facts-content">
+            <h1> About Me</h1>
+            <p>
+            Hello! I'm Nevaeh Branham, a passionate student based in Kennesaw, GA. I love reading, design, and am a first-year IT student at KSU.
+                I've recently been exploring some new hobbies like weightlifting and my local gym. I did alot of sports in highschool like swimming, xc and track but,
+            I really wanted to do weightlifting and decided to get a personal trainer. Currently, i'm working part-time and a fast-food place (my first job) and am going on a year there.
+            I really enjoy learning languages and am currently studying French. I took a few courses in highschool and even some at KSU.
+        </p>
         </div>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
