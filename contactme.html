@@ -18,11 +18,13 @@
         </nav>
     </header>
 
-    <div class="contact-container">
+    <div class="form-container">
         <h1>Contact Us</h1>
         <p>Feel free to reach out to us using the form below.</p>
 
-        <form action="process_form.php" method="post">
+        <form action="https://api.web3forms.com/submit" method="post">
+             <!-- Access Key w/ W3Forms -->
+        <input type="hidden" name="access_key" value="0792b934-9050-4611-b080-29289610a0dd">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -34,6 +36,6 @@
 
             <input type="submit" value="Submit">
         </form>
-    </div>
+
 </body>
 </html>

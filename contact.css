@@ -45,7 +45,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #a18e86
 }
 
 header {
@@ -93,6 +93,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #555;
 }
+.form-container {
+    max-width: 600px;
+    margin: 80px auto; /* Adjust the margin to center the form vertically */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;}
 
 footer {
     text-align: center;

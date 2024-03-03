@@ -5,18 +5,25 @@
 
 
 body {
-   background-image: url('https://images.unsplash.com/photo-1670993746406-a775d2121e28?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D');
-   /* need to workshop backgroun - feels too much compared to homescreen*/
+   background: #a18e86;
+
+   /* need to workshop background -- to simplisitc?? copying home too much*/
    background-repeat: no-repeat;
    background-size: cover;
     color: #ededed;
     margin: 0;
     padding: 0;
 }
-
-
-
+img {
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -160%);
+    max-width: 80%; /* Adjust the maximum width as per your preference */
+    max-height: 20vh; /* Adjust the maximum height as per your preference */
+    border-radius: 8px; /* Optional: Add border-radius for a rounded image */
 }
+
 /* Header styles */
 .header {
     position: fixed;
@@ -84,5 +91,28 @@ body {
     text-shadow: 2px 2px 4px #000000;
 }
 
+/* Add media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .facts-content h1 {
+        font-size: 32px;
+    }
+
+    .about-me p {
+        font-size: 12px;
+    }
+}
 
 

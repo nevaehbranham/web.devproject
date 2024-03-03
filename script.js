@@ -1,5 +1,5 @@
 // JavaScript for basic interactivity
-
+<!--not used rn addes js to html -->
 //Form validation
 function validateForm() {
     var name = document.forms["contactForm"]["name"].value;

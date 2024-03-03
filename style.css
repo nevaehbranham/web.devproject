@@ -81,9 +81,9 @@ body {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    color: #e4f3f0; /* Set your desired text color */
-    font-weight: bold; /* Adjust font weight as needed */
-    border: 2px solid #854442; /* Set your desired border color */
+    color: #e4f3f0; /* text color */
+    font-weight: bold; /* Adjusting  font weight */
+    border: 2px solid #854442; /* border color */
     overflow: hidden;
     transition: color 0.3s ease-in-out; /* Smooth transition for text color change */
 }
@@ -95,9 +95,9 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #854442; /* Set your desired background color */
+    background: #854442; /* background color */
     z-index: -1;
-    transition: width 0.5s, background 0.3s; /* Smooth transitions for width and background color */
+    transition: width 0.5s, background 0.3s; /* transitions for width and background color */
 }
 
 .btn-box a:hover {
@@ -151,7 +151,41 @@ body {
     width: 100%;
 }
 
+/* Add media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .header {
+        padding: 20px 5%;
+    }
 
+    .logo {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .home {
+        padding: 0 5%;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content p {
+        font-size: 12px;
+    }
+
+    .btn-box a {
+        padding: 8px 15px;
+    }
+
+    .socials {
+        bottom: 10px;
+    }
+}
 
 
 
