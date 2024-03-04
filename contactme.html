@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
+    <script src="script.js"></script>
     <title>Contact Us</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <h1>Contact Us</h1>
         <p>Feel free to reach out to us using the form below.</p>
 
-        <form action="https://api.web3forms.com/submit" method="post">
+        <form action="https://api.web3forms.com/submit" method="post" onsubmit="return validateForm();">
              <!-- Access Key w/ W3Forms -->
         <input type="hidden" name="access_key" value="0792b934-9050-4611-b080-29289610a0dd">
             <label for="name">Name:</label>

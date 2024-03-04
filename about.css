@@ -67,10 +67,12 @@ position: absolute;
     justify-content: center; /* center horizontal */
     text-align: center;
 
+
 }
     .facts-content{
     max-width: 600px;
     margin: auto;
+
     }
 
     .facts-content h1 {
@@ -79,16 +81,22 @@ position: absolute;
     font-weight: 600;
     color: #f0e2c0;
     text-shadow: 2px 2px 4px #000000;
+    border-bottom: 2px solid #4b3832; /* Add a border below the heading */
+    padding-bottom: 10px;
     }
 
 
 
 .about-me p {
+
     font-size: 6vw;
-    margin-top: 20px;
     font-weight: 300;
     max-width: 600px;
     text-shadow: 2px 2px 4px #000000;
+     border: 1px solid #ddd; /* Add a border around the content */
+    padding: 20px;
+    margin-bottom: 15px;
+
 }
 
 /* Add media query for screens smaller than 600px */
